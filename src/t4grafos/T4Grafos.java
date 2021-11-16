@@ -5,6 +5,8 @@
  */
 package t4grafos;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author benja
@@ -16,6 +18,12 @@ public class T4Grafos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JFrame ventana = new JFrame("GRAFOS");
+        ventana.add(new Lienzo());
+        ventana.setSize(1000, 1000);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setVisible(true);
+       
     }
     
 }
